@@ -13,7 +13,7 @@ public class Crime {
 
     public Crime(){
         //generate unique ID
-        mId = UUID.randomUUID()
+        mId = UUID.randomUUID();
     }
 
     public UUID getmId() {
