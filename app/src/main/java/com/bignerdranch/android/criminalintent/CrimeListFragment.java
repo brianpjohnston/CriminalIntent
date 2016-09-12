@@ -23,7 +23,7 @@ import java.util.UUID;
 
 public class CrimeListFragment extends Fragment {
 
-    private static final String SAVED_SUBTITLE_VISILBE = "subtitle";
+    private static final String SAVED_SUBTITLE_VISIBLE = "subtitle";
 
     private RecyclerView mCrimeRecyclerView;
     private CrimeAdapter mAdapter;
@@ -45,7 +45,7 @@ public class CrimeListFragment extends Fragment {
         mCrimeRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         if (savedInstanceState != null) {
-            mSubtitleVisible = savedInstanceState.getBoolean(SAVED_SUBTITLE_VISILBE);
+            mSubtitleVisible = savedInstanceState.getBoolean(SAVED_SUBTITLE_VISIBLE);
         }
 
         updateUI();
@@ -64,7 +64,7 @@ public class CrimeListFragment extends Fragment {
         super.onSaveInstanceState(outState);
         outState.putBoolean(SAVED_SUBTITLE_VISIBLE, mSubtitleVisible);
     }
-    
+
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
